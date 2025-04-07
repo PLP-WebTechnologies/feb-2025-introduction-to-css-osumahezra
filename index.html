@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <title>Basic page for data gathering</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>INTRODUCTION TO HTML</h1>
+            <p>
+                HTML (HyperText Markup Language) is the standard language used to create and design web pages. It provides the basic structure of a webpage, which is then styled using CSS (Cascading Style Sheets) and made interactive with JavaScript.   
+            </p>
+        </header>
+        
+        <main>
+            <img id="pic" src="https://images.pexels.com/photos/19501326/pexels-photo-19501326/free-photo-of-woman-hands-cutting-simit-for-breakfast.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="suya", width="400", height="auto">
+            <fieldset> <!--Listing the elements in HTML-->
+                <legend>TAGS IN HTML</legend>
+                <ul id="a">
+                    <li class="item">head</li>
+                    <li class="item">body</li>
+                    <li class="item">form</li>
+                    <li class="item">paragraph</li>
+                    <li class="item">tables</li>
+                </ul>
+            </fieldset>
+            
+            <div>
+            <!--creating a table in HTML-->
+            <Table border="1" id="det">
+                <thead>
+                    <th>NAMES</th>
+                    <th>Address</th>
+                    <th>EMAIL</th>
+                    <th>MOBILE NO</th>
+                </thead>
+
+                <tr>
+                    <td>Osilama Osumah</td>
+                    <td>50, Adesina street, Ifako, Lagos</td>
+                    <td>osumahosilama@gmail.com</td>
+                    <td>+2348023345667</td>
+                </tr>
+
+                <tr>
+                    <td>Tunde Akinade</td>
+                    <td>14, Dickon street, Mushin, Lagos</td>
+                    <td>tundeakinade@gmail.com</td>
+                    <td>+2348056723678</td>
+                </tr>
+
+                <tr>
+                    <td>Daniel Adelana</td>
+                    <td>2, Fola street, Gbagada, Lagos</td>
+                    <td>dabieladelana@gmail.com</td>
+                    <td>+2348024563678</td>
+                </tr>
+
+                <tr>
+                    <td>Luke Anfield</td>
+                    <td>9, Streak Avenue, Ikeja, Lagos</td>
+                    <td>lukeanfield@gmail.com</td>
+                    <td>+2348024547890</td>
+                </tr>
+
+                <tr>
+                    <td>Bola Suki</td>
+                    <td>18, Medina street, Ajah, Lagos</td>
+                    <td>bolasuki@gmail.com</td>
+                    <td>+23480299344670</td>
+                </tr>
+   
+            </Table>
+     
+            
+     <!--Creating a form in HTML-->
+            <form action="submit_form.php" method="POST">
+                <!--Using the table tag to format a form in HTML--> 
+                <Table>
+                    <tr class="fm">
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" required placeholder="Surname First"></td>
+                    </tr>
+                    <tr class="fm">
+                        <td><label for="email">Email Address</label></td>
+                        <td><input type="email" id="email" name="email" required placeholder="****@gmail.com"></td>
+                    </tr>
+
+                    <tr class="fm">
+                        <td><label for="Address">Residential Address</label></td>
+                        <td><input type="text" id="address" name="address"></td>
+                    </tr>
+                    
+                    <tr class="fm">
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password" id="password" name="password" required placeholder="Qwertyu#" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}"></td> <!--Validating the content of the password to fit into the requirement stated-->
+                        <td><small>must be 8 character long with atleast one capital letter, one small letter and one symbol</small></td>
+                    </tr class="fm">
+
+                    <tr class="fm">
+                        <td><label for="age">Date</label></td>
+                        <td><input type="date" id="date" name="date"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td> <!--Creating a radio button-->
+                            <label>
+                                <input type="radio" name="gender" value="male"> Male
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="female" > Female
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="other"> Other
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="subject">Subject:</label></td>
+                        <td><!--Creating a check box-->
+                            <input type="checkbox" id="Mathematics" name="subject" value="Mathematics">
+                            <label for="Mathematics">Mathematics</label>
+                            
+                            <input type="checkbox" id="English" name="subject" value="English">
+                            <label for="English">English</label>
+                            
+                            <input type="checkbox" id="Physics" name="subject" value="Physics">
+                            <label for="Physics">Physics</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="state">State of Origin</label></td>
+                        <td><!--Creating a dropdown-->
+                            <select name="state" id="state">
+                                <option value="edo">Edo</option>
+                                <option value="lagos">Lagos</option>
+                                <option value="abuja">Abuja</option>
+                                <option value="rivers">Rivers</option>
+                                <option value="kano">Kano</option>
+                                <option value="Osun">Osun</option>
+                            </select>
+                            
+                        </td>
+                    </tr>
+                </Table>
+                    <button type="submit">Submit</button>
+                
+            </form>
+        </div>
+
+            
+            
+            
+        </main>
+        <footer>
+            <p>For more enquiries about HTML check <a href="https://google.com">here</a></p>
+            <p>&copy; 2021 Osumah Ezra. Contact: +2348086496497. email: osumahosilama@gmail.com</p>
+        </footer>
+    </body>
+</html>
